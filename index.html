@@ -144,16 +144,16 @@ footer{background:var(--vk);border-top:1px solid var(--vb);padding:2rem;text-ali
   <path d="M64.2153 142L152.141 0C122.459 33.2169 96.6815 61.5811 50.1132 62.0467C64.081 67.9021 77.6458 67.2665 90.199 65.3236L64.7614 107.834C54.214 89.6946 44.7051 71.5372 34.1666 53.4067C51.7248 56.1285 79.0964 55.26 100.281 40.0304C63.6601 52.4129 23.8608 42.5373 0.0170898 29.9937L64.2332 142.009L64.2153 142Z" fill="#00D700"/>
 </svg>
   </a>
-  <span class="header-tag">Business Strategy – OCM</span>
+  <span class="header-tag">Business Strategy</span>
 </header>
 
 <div class="hero">
   <div class="hero-eyebrow">Change Investment Case</div>
   <h1>What's really<br><span>at stake?</span></h1>
-  <p>Enter your program details and see exactly what your investment is at risk of losing — and what effective change management is worth in dollars.</p>
+  <p>Enter your program details and see exactly what your investment is at risk of losing — and what an effective operating model and change management is worth in dollars.</p>
   <div class="hero-stats">
-    <div class="hero-stat"><strong>143%</strong><span>Average ROI with strong OCM</span></div>
-    <div class="hero-stat"><strong>35%</strong><span>ROI without OCM</span></div>
+    <div class="hero-stat"><strong>143%</strong><span>Average ROI with strong Op Model and OCM</span></div>
+    <div class="hero-stat"><strong>35%</strong><span>ROI without Op Model and OCM</span></div>
     <div class="hero-stat"><strong>6&times;</strong><span>More likely to succeed</span></div>
     <div class="hero-stat"><strong>2 in 3</strong><span>Programs fail or underperform</span></div>
   </div>
@@ -255,7 +255,7 @@ footer{background:var(--vk);border-top:1px solid var(--vb);padding:2rem;text-ali
   <!-- ── Results ── -->
   <div id="results">
 
-    <div class="results-title">Your Change Investment Case</div>
+    <div class="results-title">Your Change and Operating Model Investment Case</div>
     <div class="results-sub" id="resultsSub"></div>
 
     <!-- Risk hero -->
@@ -270,7 +270,7 @@ footer{background:var(--vk);border-top:1px solid var(--vb);padding:2rem;text-ali
 
     <!-- Benefit realisation compare -->
     <div class="benefit-compare">
-      <div class="benefit-compare-title">Benefit realisation — with vs without OCM</div>
+      <div class="benefit-compare-title">Benefit realisation — with vs without Operating Model and OCM</div>
       <div class="bc-row" id="bcRow"></div>
       <div class="bc-delta" id="bcDelta"></div>
     </div>
@@ -289,7 +289,7 @@ footer{background:var(--vk);border-top:1px solid var(--vb);padding:2rem;text-ali
 
     <!-- ROI of change -->
     <div class="roi-card">
-      <div class="roi-title">&#10022; The return on investing in change</div>
+      <div class="roi-title">&#10022; The return on investing in operating model and change</div>
       <div class="roi-equation" id="roiEquation"></div>
       <div class="roi-desc" id="roiDesc"></div>
     </div>
@@ -297,7 +297,7 @@ footer{background:var(--vk);border-top:1px solid var(--vb);padding:2rem;text-ali
     <!-- CTA -->
     <div class="cta-card">
       <h3>Ready to protect your program investment?</h3>
-      <p>Versent's Business Strategy – OCM practice helps organisations land change that sticks. Let's talk about what the right level of support looks like for your program.</p>
+      <p>Versent's Business Strategy practice helps organisations own and govern their technology and land change that sticks. Let's talk about what the right level of support looks like for your program.</p>
       <a class="btn-cta" href="https://versent.com.au/contact/" target="_blank">Talk to Versent</a>
     </div>
 
@@ -313,7 +313,7 @@ footer{background:var(--vk);border-top:1px solid var(--vb);padding:2rem;text-ali
   <path d="M64.2153 142L152.141 0C122.459 33.2169 96.6815 61.5811 50.1132 62.0467C64.081 67.9021 77.6458 67.2665 90.199 65.3236L64.7614 107.834C54.214 89.6946 44.7051 71.5372 34.1666 53.4067C51.7248 56.1285 79.0964 55.26 100.281 40.0304C63.6601 52.4129 23.8608 42.5373 0.0170898 29.9937L64.2332 142.009L64.2153 142Z" fill="#00D700"/>
 </svg>
   </div>
-  <div class="footer-text">Business Strategy &ndash; OCM &middot; <a href="https://versent.com.au" target="_blank">versent.com.au</a></div>
+  <div class="footer-text">Business Strategy <a href="https://versent.com.au" target="_blank">versent.com.au</a></div>
 </footer>
 
 <script>
@@ -418,15 +418,15 @@ function calculate() {
   document.getElementById('riskAmount').textContent = fmt(totalAtRisk);
   document.getElementById('riskAmount').style.color = riskColor;
   document.getElementById('riskSub').innerHTML =
-    '<span style="color:' + riskColor + '">' + Math.round(riskPct*100) + '% of your ' + fmt(budget) + ' investment</span> is at risk without effective change management.<br>' +
+    '<span style="color:' + riskColor + '">' + Math.round(riskPct*100) + '% of your ' + fmt(budget) + ' investment</span> is at risk without an effective operating model or change management.<br>' +
     'With <strong>' + workLabel + '</strong> of daily work changing, poor adoption assurance puts your entire program at stake.';
 
   // Stat cards
   document.getElementById('statCards').innerHTML =
     '<div class="stat-card danger"><div class="stat-icon">&#128308;</div><div class="stat-val red">' + fmt(totalAtRisk) + '</div><div class="stat-lbl">Total value at risk</div></div>' +
-    '<div class="stat-card warning"><div class="stat-icon">&#128200;</div><div class="stat-val amber">' + fmt(benefitWithoutOCM) + ' / yr</div><div class="stat-lbl">Benefits without OCM</div></div>' +
-    '<div class="stat-card positive"><div class="stat-icon">&#9989;</div><div class="stat-val green">' + fmt(benefitWithOCM) + ' / yr</div><div class="stat-lbl">Benefits with OCM</div></div>' +
-    '<div class="stat-card info"><div class="stat-icon">&#128176;</div><div class="stat-val blue">' + roiMultiple + '&times; ROI</div><div class="stat-lbl">Return on OCM investment</div></div>';
+    '<div class="stat-card warning"><div class="stat-icon">&#128200;</div><div class="stat-val amber">' + fmt(benefitWithoutOCM) + ' / yr</div><div class="stat-lbl">Benefits without Op model and OCM</div></div>' +
+    '<div class="stat-card positive"><div class="stat-icon">&#9989;</div><div class="stat-val green">' + fmt(benefitWithOCM) + ' / yr</div><div class="stat-lbl">Benefits with Op Model and OCM</div></div>' +
+    '<div class="stat-card info"><div class="stat-icon">&#128176;</div><div class="stat-val blue">' + roiMultiple + '&times; ROI</div><div class="stat-lbl">Return on Op Model and OCM investment</div></div>';
 
   // Benefit compare
   document.getElementById('bcRow').innerHTML =
